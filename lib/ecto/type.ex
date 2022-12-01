@@ -272,7 +272,7 @@ defmodule Ecto.Type do
   """
   @callback autogenerate() :: term()
 
-  @optional_callbacks autogenerate: 0
+  @optional_callbacks autogenerate: 0, embed_as: 1
 
   ## Functions
 
